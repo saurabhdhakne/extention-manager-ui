@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookto</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <!-- <script src="dragger.js" defer></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/db006bf474.js"></script>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row p-2" style="height:100vh">
+
+            <!-- side bar -->
+            <div class="col-md-2 panel p-3" >
+                <div class="d-flex align-items-center">
+                    <span class="col-4">
+                        <img src="./logo.png" width="100%" alt="bookto">
+                    </span>
+                    <span class="flex-grow-1 offset-1 h4 text-primary-root">
+                        Bookmark <br> Manager
+                    </span>
+                </div>
+            </div>
+
+            <!-- remaining panel -->
+            <div class="col-md-10">
+                <div class="col-md-12">
+
+                    <!-- Head band -->
+                    <div class="row">
+                        <div class="col-md-2 p-0 ps-2">
+                            <div class="panel">
+                                  
+                            </div>
+                        </div>
+                        <div class="col-md-5 search-bar p-0 ps-2">
+                            <span class="search-box form-control d-flex align-items-center rounded-pill shadow-sm p-0 ps-4 pe-4">
+                                <i class="fa fa-search font-weight-bold m-0" aria-hidden="true"></i>
+                                <input type="text" class="form-control search-input m-0" placeholder="Web Search">
+                            </span>
+                            <span class="mt-2 search-box form-control d-flex align-items-center rounded-pill shadow-sm p-0 ps-4 pe-4">
+                                <i class="fa fa-search font-weight-bold m-0" aria-hidden="true"></i>
+                                <input type="text" class="form-control search-input m-0" placeholder="Bookmark Search">
+                            </span>
+                        </div>
+                        <div class="col-md-3 p-0 ps-2">
+                            <div class="panel">
+
+                            </div>
+                        </div>
+                        <div class="col-md-2 p-0 ps-2">
+                            <div class="panel">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- mid band -->
+                    <div class="row mid-band mt-2">
+                        <div class="col-md-12 p-0 ps-2 pe-1">
+                            <button class="btn btn-outline-secondary btn-sm rounded-0 p-1 ps-3 pe-3 ">
+                                <i class="fa fa-plus m-0" aria-hidden="true"></i>
+                                Create new Category
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Bookmark managing section -->
+                    <div class="row mt-2">
+                        <div class="col-md-3 bm-column bmc-1 p-0 ps-2">
+                            <div class="col-md-12 align-self-start">
+                                <div class="panel shadow-sm container-bookmark" id="bmc-1">
+                                    <input type="text" name="" value="Bookmark bar">
+                                    <p class="cb-draggable" draggable="true">Mail - Saurabh Dhakne - Outlook</p>
+                                    <p class="cb-draggable" draggable="true">How To Set Up Django with Postgres, Nginx, and Gunicorn on Ubuntu 18.04 | DigitalOcean</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 bm-column bmc-1 p-0 ps-2">
+                            <div class="col-md-12 align-self-start" id="bmc-1">
+                                <div class="panel shadow-sm container-bookmark" id="bmc-2">
+                                    <input type="text" name="" value="Bookmark bar">
+                                    <p class="cb-draggable" draggable="true">Mail - Saurabh Dhakne - Outlook</p>
+                                    <p class="cb-draggable" draggable="true">How To Set Up Django with Postgres, Nginx, and Gunicorn on Ubuntu 18.04 | DigitalOcean</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400&display=swap');
+
+/* Global variable */
+:root {
+  --parent-color: #f2f2f2;
+  --panel-color: #ffffff;
+  --primar-color: rgb(253, 192, 33);
+  --primary-text-color: rgb(20, 20, 20);
+  --panel-color-secondary: #848484;
+}
+
+/* convert Hex color #FDC021 to fgb */
+body{
+  margin: 0;
+  padding: 0;
+  background: var(--parent-color) !important;
+  color: var(--primary-text-color) !important;
+  font-family: 'Red Hat Display', sans-serif  !important;
+}  
+
+.text-primary-root{
+  color: var(--primar-color) !important;
+}
+
+.bm-column input[type="text"] {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+
+.bm-column input[type="text"]:focus {
+  outline: none;
+  background: var(--parent-color) !important;
+}
+/* Input type text on focus formatting */
+
+.search-box i, .search-box input{
+  color: rgb(91, 91, 91);
+}
+
+.search-box input, .search-box input:focus{
+  border: 0;
+  box-shadow: none;
+}
+
+.panel{
+  background: var(--panel-color);
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.mid-band .btn{
+  font-size: .8em;
+}
+
+/* .btn-create-category{
+  background: var(--panel-color-secondary);
+  color: var(--parent-color);
+  opacity: .7;
+  border-radius: 2px;
+} */
+.container-bookmark{
+  padding: 1rem;
+}
+
+.cb-draggable{
+  padding: 4px 2px;
+  width: 100%;
+  font-size: .8em;
+  margin-bottom: 0px;
+  cursor: move;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.dragging{
+  background: var(--parent-color);
+  opacity: .7;
+}
